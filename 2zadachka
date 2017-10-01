@@ -1,0 +1,22 @@
+#include <iostream>
+#include <stdlib.h>
+#include <time.h>
+
+using namespace std;
+
+int main()
+{
+    srand(time(NULL));
+    int n;
+    double sum=0;
+    cout <<"Input n:";
+    cin >> n;
+    double mas[n];
+    for (int i=0; i<n; i++){
+        mas[i]=rand()%13+1;
+        cout << mas[i] << " ";
+        sum+=mas[i];}
+        mas[5]=sum/n;
+        cout<<endl<<"Srednee:"<<mas[5];
+    return 0;
+}
